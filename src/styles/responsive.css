@@ -1,0 +1,138 @@
+/**
+ * QuizMaster Responsive Design Breakpoints
+ */
+
+/* Tablets and small desktops */
+@media (max-width: 960px) {
+  .quiz-screen-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-sidebar-panel {
+    position: static;
+    order: 2;
+  }
+
+  .selector-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .results-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile landscape and tablets */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .setup-panel {
+    padding: var(--space-5);
+  }
+
+  .question-card {
+    padding: var(--space-5);
+  }
+
+  .question-text {
+    font-size: 1.15rem;
+  }
+
+  .quiz-summary-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: flex-start;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .main-content {
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .navbar {
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .brand-icon-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .segmented-group {
+    flex-direction: column;
+  }
+
+  .results-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+  }
+
+  .result-stat-val {
+    font-size: 1.3rem;
+  }
+
+  .quiz-controls-row {
+    flex-direction: column-reverse;
+  }
+
+  .quiz-controls-row button {
+    width: 100%;
+  }
+
+  .results-actions-card {
+    flex-direction: column;
+  }
+
+  .results-actions-card button {
+    width: 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+
+  .review-header-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
